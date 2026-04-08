@@ -1,5 +1,8 @@
 # UCloud 安全中心统一 Skill
 
+> 本 skill 面向 **UCloud 内部业务** 使用；优先结合 `../references/ucloud-service-map.md` 回答“UCloud 有没有这个服务、入口在哪、应该用哪个产品”。
+> 如果用户要求做资产盘点、项目盘点、资源汇总，优先结合 `../references/ucloud-asset-inventory-guide.md` 和 `../scripts/inventory_ucloud_assets.py`。
+
 ## 触发场景
 
 当用户提到以下任意安全防护相关问题时激活本 skill：
