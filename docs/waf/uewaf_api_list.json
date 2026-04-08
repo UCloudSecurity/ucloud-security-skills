@@ -1,0 +1,474 @@
+{
+    "Action": "GetOpenApiByProductResponse",
+    "RetCode": 0,
+    "Product": {
+        "CName": "WEB应用防火墙",
+        "Name": "UEWAF",
+        "Order": 0
+    },
+    "APIList": [
+        {
+            "Name": "AddAntiCCRule",
+            "CName": "添加CC防御规则",
+            "EName": "AddAntiCCRule",
+            "Order": 0,
+            "ReqDemo": "https://api.ucloud.cn/?Action=AddAntiCCRule\n&ProjectId=org-xxx\n&Domain=www.test.com\n&Reqs=55000\n&URL=/index.html\n&Mode=equal\n&Duration=2800\n&ActionType=forbidden\n&Validity=5720\n&Name=orNYqSGc\n&ExtendsRule.n=LrRovfgG",
+            "ResDemo": "{\n  \"Action\": \"AddAntiCCRuleResponse\",\n  \"Id\": 6,\n  \"RetCode\": 0\n}",
+            "Desc": "添加CC防御规则"
+        },
+        {
+            "Name": "AddAssurancePage",
+            "CName": "添加防篡改页面",
+            "EName": "AddAssurancePage",
+            "Order": 1,
+            "ReqDemo": "https://api.ucloud.cn/?Action=AddAssurancePage\n&ProjectId=org-xxx\n&Domain=www.test.com\n&URL=https://www.test.com/index.html\n&State=on\n&Remark=test",
+            "ResDemo": "{\n  \"Action\": \"AddAssurancePageResponse\",\n  \"Id\": 2,\n  \"RetCode\": 0\n}",
+            "Desc": "添加防篡改页面"
+        },
+        {
+            "Name": "AddAutoWafDomainBlackList",
+            "CName": "创建自动拦截策略接口",
+            "EName": "AddAutoWafDomainBlackList",
+            "Order": 2,
+            "ReqDemo": "https://api.ucloud.cn/?Action=AddAutoWafDomainBlackList\n&ProjectId=org-xxx\n&FullDomain=www.test.com\n&ActionType=forbidden\n&State=Enable\n&ExpireTime=60\n&AttackCount=10\n&Interval=60",
+            "ResDemo": "{\n  \"Action\": \"AddAutoWafDomainBlackListResponse\",\n  \"Id\": 8,\n  \"RetCode\": 0\n}",
+            "Desc": "当检测到攻击后，自动将访问源IP加入黑名单"
+        },
+        {
+            "Name": "AddWafDomainBlackList",
+            "CName": "添加域名黑名单",
+            "EName": "AddWafDomainBlackList",
+            "Order": 3,
+            "ReqDemo": "https://api.ucloud.cn/?Action=AddWafDomainBlackList\n&ProjectId=org-xxx\n&FullDomain=www.test.com\n&Source=custom\n&Type=custom\n&ActionType=forbidden\n&CIDRS.0=2.2.2.2\n&ExpireTime=10\n&Remark=test\n&Name=DqXFAQfT",
+            "ResDemo": "{\n  \"Action\": \"AddWafDomainBlackListResponse\",\n  \"Id\": 6,\n  \"RetCode\": 0\n}",
+            "Desc": "添加域名黑名单"
+        },
+        {
+            "Name": "AddWafDomainCertificateInfo",
+            "CName": "添加SSL证书",
+            "EName": "AddWafDomainCertificateInfo",
+            "Order": 4,
+            "Desc": "添加SSL证书，支持keyless"
+        },
+        {
+            "Name": "AddWafDomainHostInfo",
+            "CName": "新增防护域名配置",
+            "EName": "AddWafDomainHostInfo",
+            "Order": 5,
+            "Desc": "新增防护域名配置"
+        },
+        {
+            "Name": "AddWafDomainWhiteList",
+            "CName": "添加域名白名单",
+            "EName": "AddWafDomainWhiteList",
+            "Order": 6,
+            "Desc": "添加域名白名单"
+        },
+        {
+            "Name": "AddWafProtectionRuleInfo",
+            "CName": "添加WAF防护规则",
+            "EName": "AddWafProtectionRuleInfo",
+            "Order": 7,
+            "Desc": "添加WAF防护规则"
+        },
+        {
+            "Name": "AddWafRegionBlockRule",
+            "CName": "添加WAF区域IP封堵规则",
+            "EName": "AddWafRegionBlockRule",
+            "Order": 8,
+            "Desc": "添加WAF区域IP封堵规则"
+        },
+        {
+            "Name": "AddWafResponseFilter",
+            "CName": "添加信息安全过滤规则",
+            "EName": "AddWafResponseFilter",
+            "Order": 9,
+            "Desc": "添加信息安全过滤规则"
+        },
+        {
+            "Name": "BindCertificate",
+            "CName": "绑定SSL证书",
+            "EName": "BindCertificate",
+            "Order": 10,
+            "Desc": "绑定新的SSL证书到指定域名"
+        },
+        {
+            "Name": "CheckWafMenuSettingOverflow",
+            "CName": "校验域名和规则数是否超出指定套餐的限制",
+            "EName": "CheckWafMenuSettingOverflow",
+            "Order": 9,
+            "Desc": "校验域名和规则数是否超出指定套餐的限制"
+        },
+        {
+            "Name": "CopyWafDomainRules",
+            "CName": "批量复制WAF规则",
+            "EName": "CopyWafDomainRules",
+            "Order": 10,
+            "Desc": "批量复制WAF规则，目前支持防护规则、CC规则、恶意IP惩罚规则、黑白名单、返回码防护规则的复制"
+        },
+        {
+            "Name": "DeleteAntiCCRule",
+            "CName": "删除CC防御规则",
+            "EName": "DeleteAntiCCRule",
+            "Order": 11,
+            "Desc": "删除CC防御规则"
+        },
+        {
+            "Name": "DeleteAssurancePage",
+            "CName": "删除防篡改页面",
+            "EName": "DeleteAssurancePage",
+            "Order": 12,
+            "Desc": "删除防篡改页面"
+        },
+        {
+            "Name": "DeleteAutoWafDomainBlackList",
+            "CName": "删除自动添加黑名单",
+            "EName": "DeleteAutoWafDomainBlackList",
+            "Order": 13,
+            "Desc": "删除自动添加黑名单记录"
+        },
+        {
+            "Name": "DeleteWafDomainBlackList",
+            "CName": "删除域名黑名单记录",
+            "EName": "DeleteWafDomainBlackList",
+            "Order": 14,
+            "Desc": "删除域名黑名单记录"
+        },
+        {
+            "Name": "DeleteWafDomainCertificateInfo",
+            "CName": "删除指定域名的ssl证书",
+            "EName": "DeleteWafDomainCertificateInfo",
+            "Order": 15,
+            "Desc": "删除指定域名的ssl证书"
+        },
+        {
+            "Name": "DeleteWafDomainHostInfo",
+            "CName": "删除WAF防御域名",
+            "EName": "DeleteWafDomainHostInfo",
+            "Order": 16,
+            "Desc": "删除WAF防御域名"
+        },
+        {
+            "Name": "DeleteWafDomainWhiteList",
+            "CName": "删除域名白名单记录",
+            "EName": "DeleteWafDomainWhiteList",
+            "Order": 17,
+            "Desc": "删除域名白名单记录"
+        },
+        {
+            "Name": "DeleteWafProtectionRuleInfo",
+            "CName": "删除WAF防护规则",
+            "EName": "DeleteWafProtectionRuleInfo",
+            "Order": 18,
+            "Desc": "删除WAF防护规则"
+        },
+        {
+            "Name": "DeleteWafRegionBlockRule",
+            "CName": "删除地域IP封堵规则",
+            "EName": "DeleteWafRegionBlockRule",
+            "Order": 19,
+            "Desc": "删除地域IP封堵规则"
+        },
+        {
+            "Name": "DeleteWafResponseFilter",
+            "CName": "删除信息安全过滤规则",
+            "EName": "DeleteWafResponseFilter",
+            "Order": 20,
+            "Desc": "删除信息安全过滤规则"
+        },
+        {
+            "Name": "DescribeAntiCCRules",
+            "CName": "CC防御规则列表",
+            "EName": "DescribeAntiCCRules",
+            "Order": 21,
+            "Desc": "CC防御规则列表"
+        },
+        {
+            "Name": "DescribeAssurancePages",
+            "CName": "获取防篡改页面列表",
+            "EName": "DescribeAssurancePages",
+            "Order": 22,
+            "Desc": "获取防篡改页面列表"
+        },
+        {
+            "Name": "DescribeAutoWafDomainBlackList",
+            "CName": "查询自动添加黑名单策略",
+            "EName": "DescribeAutoWafDomainBlackList",
+            "Order": 23,
+            "Desc": "查询自动添加黑名单策略"
+        },
+        {
+            "Name": "DescribeWafAccessLog",
+            "CName": "查询用户访问日志",
+            "EName": "DescribeWafAccessLog",
+            "Order": 26,
+            "Desc": "查询用户访问日志，最大支持10000条记录，最大支持7天内日志查询"
+        },
+        {
+            "Name": "DescribeWafAttackDetailListInfo",
+            "CName": "查询WAF攻击详情",
+            "EName": "DescribeWafAttackDetailListInfo",
+            "Order": 24,
+            "Desc": "查询WAF攻击详情"
+        },
+        {
+            "Name": "DescribeWafAttackFalseAlarmListInfo",
+            "CName": "获取误报记录列表",
+            "EName": "DescribeWafAttackFalseAlarmListInfo",
+            "Order": 25,
+            "Desc": "获取误报记录列表"
+        },
+        {
+            "Name": "DescribeWafAttackSummaryInfo",
+            "CName": "获取指定域名的攻击行为概览",
+            "EName": "DescribeWafAttackSummaryInfo",
+            "Order": 29,
+            "Desc": "获取指定域名的攻击行为概览"
+        },
+        {
+            "Name": "DescribeWafDomainAttackCount",
+            "CName": "获取域名攻击次数",
+            "EName": "DescribeWafDomainAttackCount",
+            "Order": 30,
+            "Desc": "获取域名当日攻击次数"
+        },
+        {
+            "Name": "DescribeWafDomainBlackList",
+            "CName": "获取域名黑名单列表",
+            "EName": "DescribeWafDomainBlackList",
+            "Order": 26,
+            "Desc": "获取域名黑名单列表"
+        },
+        {
+            "Name": "DescribeWafDomainCertificateInfo",
+            "CName": "显示域名对应的证书",
+            "EName": "DescribeWafDomainCertificateInfo",
+            "Order": 27,
+            "Desc": "显示域名对于的证书"
+        },
+        {
+            "Name": "DescribeWafDomainHostInfo",
+            "CName": "获取WAF防护域名列表",
+            "EName": "DescribeWafDomainHostInfo",
+            "Order": 28,
+            "Desc": "获取WAF防护域名列表"
+        },
+        {
+            "Name": "DescribeWafDomainQPSTrend",
+            "CName": "查询WAF域名QPS趋势",
+            "EName": "DescribeWafDomainQPSTrend",
+            "Order": 34,
+            "Desc": "查询WAF域名QPS趋势"
+        },
+        {
+            "Name": "DescribeWafDomainWhiteList",
+            "CName": "获取域名白名单列表",
+            "EName": "DescribeWafDomainWhiteList",
+            "Order": 29,
+            "Desc": "获取域名白名单列表"
+        },
+        {
+            "Name": "DescribeWafProtectionSummaryInfo",
+            "CName": "获取防护规则列表",
+            "EName": "DescribeWafProtectionSummaryInfo",
+            "Order": 30,
+            "Desc": "获取防护规则列表"
+        },
+        {
+            "Name": "DescribeWafResponseFilter",
+            "CName": "查询信息安全过滤规则",
+            "EName": "DescribeWafResponseFilter",
+            "Order": 31,
+            "Desc": "查询信息安全过滤规则"
+        },
+        {
+            "Name": "DescribeWafSystemRules",
+            "CName": "查询指定域名的系统默认规则",
+            "EName": "DescribeWafSystemRules",
+            "Order": 32,
+            "Desc": "查询指定域名的系统默认规则"
+        },
+        {
+            "Name": "DescribeWafUserTransactionInfo",
+            "CName": "获取用户购买详细信息",
+            "EName": "DescribeWafUserTransactionInfo",
+            "Order": 33,
+            "Desc": "获取用户购买的详细信息，包括资源ID，版本类型，过期时间，付费方式、购买价格"
+        },
+        {
+            "Name": "DownloadWAFAccessLog",
+            "CName": "下载访问日志",
+            "EName": "DownloadWAFAccessLog",
+            "Order": 34,
+            "Desc": "下载访问日志"
+        },
+        {
+            "Name": "GetWafRegionBlockRule",
+            "CName": "查询区域IP封堵规则",
+            "EName": "GetWafRegionBlockRule",
+            "Order": 35,
+            "Desc": "查询区域IP封堵记录"
+        },
+        {
+            "Name": "ModifyAntiCCRule",
+            "CName": "修改CC防御规则",
+            "EName": "ModifyAntiCCRule",
+            "Order": 36,
+            "Desc": "修改CC防御规则"
+        },
+        {
+            "Name": "ModifyAntiCCState",
+            "CName": "更改域名CC防御状态",
+            "EName": "ModifyAntiCCState",
+            "Order": 37,
+            "Desc": "更改域名CC防御状态"
+        },
+        {
+            "Name": "ModifyAssurancePage",
+            "CName": "编辑防篡改页面",
+            "EName": "ModifyAssurancePage",
+            "Order": 38,
+            "Desc": "编辑防篡改页面"
+        },
+        {
+            "Name": "ModifyAutoWafDomainBlackList",
+            "CName": "修改自动拦截规则",
+            "EName": "ModifyAutoWafDomainBlackList",
+            "Order": 39,
+            "Desc": "修改自动拦截规则，当检测到攻击后，自动将访问源IP加入黑名单"
+        },
+        {
+            "Name": "ModifyGlobalAssuranceState",
+            "CName": "网页防篡改全局开关",
+            "EName": "ModifyGlobalAssuranceState",
+            "Order": 40,
+            "Desc": "网页防篡改全局开关"
+        },
+        {
+            "Name": "ModifyWafAttackFalseAlarmStatus",
+            "CName": "新的误报接口",
+            "EName": "ModifyWafAttackFalseAlarmStatus",
+            "Order": 41,
+            "Desc": "添加误报/取消误报操作"
+        },
+        {
+            "Name": "ModifyWafDomainBlackList",
+            "CName": "编辑域名黑名单",
+            "EName": "ModifyWafDomainBlackList",
+            "Order": 42,
+            "Desc": "编辑域名黑名单"
+        },
+        {
+            "Name": "ModifyWafDomainHostInfo",
+            "CName": "编辑防护域名信息",
+            "EName": "ModifyWafDomainHostInfo",
+            "Order": 43,
+            "Desc": "编辑防护域名信息"
+        },
+        {
+            "Name": "ModifyWafDomainWhiteList",
+            "CName": "编辑域名白名单",
+            "EName": "ModifyWafDomainWhiteList",
+            "Order": 44,
+            "Desc": "编辑域名白名单"
+        },
+        {
+            "Name": "ModifyWafProtectionCustomerInfo",
+            "CName": "编辑自定义防护规则",
+            "EName": "ModifyWafProtectionCustomerInfo",
+            "Order": 45,
+            "Desc": "编辑自定义防护规则"
+        },
+        {
+            "Name": "ModifyWafProtectionModeInfo",
+            "CName": "更改WAF工作模式",
+            "EName": "ModifyWafProtectionModeInfo",
+            "Order": 46,
+            "Desc": "更改WAF工作模式"
+        },
+        {
+            "Name": "ModifyWafProtectionPriorityInfo",
+            "CName": "修改防护规则优先级",
+            "EName": "ModifyWafProtectionPriorityInfo",
+            "Order": 47,
+            "Desc": "修改防护规则优先级"
+        },
+        {
+            "Name": "ModifyWafProtectionPriorityPoleInfo",
+            "CName": "调整防护规则优先级至最高或者最低",
+            "EName": "ModifyWafProtectionPriorityPoleInfo",
+            "Order": 48,
+            "Desc": "调整防护规则优先级至最高或者最低"
+        },
+        {
+            "Name": "ModifyWafProtectionSystemInfo",
+            "CName": "修改用户系统规则",
+            "EName": "ModifyWafProtectionSystemInfo",
+            "Order": 49,
+            "Desc": "修改用户系统规则放行或拦截"
+        },
+        {
+            "Name": "ModifyWafRegionBlockRule",
+            "CName": "修改地域IP封堵规则",
+            "EName": "ModifyWafRegionBlockRule",
+            "Order": 50,
+            "Desc": "修改地域IP封堵规则"
+        },
+        {
+            "Name": "ModifyWafResponseFilter",
+            "CName": "修改信息安全过滤规则",
+            "EName": "ModifyWafResponseFilter",
+            "Order": 51,
+            "Desc": "修改信息安全过滤规则"
+        },
+        {
+            "Name": "StatWafAttackSrcTrend",
+            "CName": "WAF攻击源IP数概览",
+            "EName": "StatWafAttackSrcTrend",
+            "Order": 58,
+            "Desc": "WAF攻击源IP数概览"
+        },
+        {
+            "Name": "StatWafAttacksTrend",
+            "CName": "WAF攻击发生次数概览",
+            "EName": "StatWafAttacksTrend",
+            "Order": 59,
+            "Desc": "WAF攻击发生次数概览"
+        },
+        {
+            "Name": "StatWafQPSTrend",
+            "CName": "获取WAF QPS趋势",
+            "EName": "StatWafQPSTrend",
+            "Order": 60,
+            "Desc": "获取WAF QPS趋势"
+        },
+        {
+            "Name": "StatWafRXTrend",
+            "CName": "获取WAF上行流量趋势",
+            "EName": "StatWafRXTrend",
+            "Order": 61,
+            "Desc": "获取WAF上行流量趋势"
+        },
+        {
+            "Name": "StatWafReqsTrend",
+            "CName": "获取WAF请求数趋势",
+            "EName": "StatWafReqsTrend",
+            "Order": 62,
+            "Desc": "获取WAF请求数趋势"
+        },
+        {
+            "Name": "StatWafTXTRend",
+            "CName": "获取WAF下行流量趋势",
+            "EName": "StatWafTXTRend",
+            "Order": 63,
+            "Desc": "获取WAF下行流量趋势"
+        },
+        {
+            "Name": "UpdateAssurePageCache",
+            "CName": "网页防篡改更新指定url的缓存",
+            "EName": "UpdateAssurePageCache",
+            "Order": 52,
+            "Desc": "网页防篡改更新指定url的缓存"
+        }
+    ]
+}

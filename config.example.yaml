@@ -1,0 +1,5 @@
+ucloud:
+  public_key: "your-public-key-here"
+  private_key: "your-private-key-here"
+  project_id: "org-xxxxxx"
+  base_url: "https://api.ucloud.cn"

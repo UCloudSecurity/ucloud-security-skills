@@ -1,0 +1,2 @@
+ucloud-sdk-python3
+pyyaml
